@@ -1,7 +1,17 @@
 body {
-    background-color: olive;
+    background-image: ;
+    background-color: skyblue;
 }
 
 h1 {
-    background-color: red;
+    background-color: gray;
+}
+
+.test{
+    color:beige;
+    cursor: pointer;
+}
+
+.test:hover{
+    color:crimson;
 }

@@ -1,2 +1,7 @@
 alert("hello there!!!!")
-console.log("jgjfdkhj")
+
+let LMAO = false
+
+while (LMAO){
+    alert("YOUR HACKED!!!!!!!!!!!!!!!!")
+}
