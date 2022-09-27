@@ -1,28 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>text</title>
+    <meta name="viewport" content="with=device-width, initial-
+    scale=1.0">
+    <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 <body>
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="Kristian.png", width="100px"></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="">HJEM</a></li>
+                <li><a href="">OM MEG</a></li>
+                <li><a href="">PROSJEKTER</a></li>
+                <li><a href="CV.pdf" download>CV-DOWNLOAD</a></li>
+                <li><a href="">ERFARING</a></li>
+                <li><a href="">KONTAKT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
 
-<table style="position: relative; right: -1000px;">
-    <tr>
-        <th onclick="window.location.href = 'e.html'" class="test">Home</th>
-        <th>Project</th>
-        <th>Education</th>
-        <th>About Me</th>
-        <th onclick="window.location.href = 'google.com'">About You</th>
-    </tr>
-</table>
-    
-    <h1> git demo</h1>
+    </nav>
 
-    <script src="app.js"></script>
+    <div class="text-box">
+        <h1 >HEI! JEG ER KRISTIAN</h1>
+        <P>Kompitent VG2 elev i it drift og utvikling. <br> Les under for mer information. </P>
+        <a href=""class="about-me-btn" href="">Klikk her for mer informasjon om meg </a>
+    </div>
+
+
+
+</section>
+
+
+
+
+
+<!--------Javascript for toggle menu--------->
+ <script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+
+ </script>
+
+
+
 
 </body>
 </html>
