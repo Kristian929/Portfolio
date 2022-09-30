@@ -13,56 +13,222 @@
 
 </head>
 <body>
-<section class="header">
+<section class="header ">
     <nav>
-        <a href="index.html"><img src="Kristian.png", width="100px"></a>
+        <a href="index.html"><img src="/Bilder/Kristian.png", width="100px"></a>
         <div class="nav-links" id="navLinks">
           <i class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
-                <li><a href="">HJEM</a></li>
-                <li><a href="">OM MEG</a></li>
-                <li><a href="">PROSJEKTER</a></li>
+                <li><a onclick="Hjem('.header')">HJEM</a></li>
+                <li><a onclick="Hjem('.OM-MEG')">OM MEG</a></li>
+                <li><a onclick="Hjem('.Prosjekter')">PROSJEKTER</a></li>
                 <li><a href="CV.pdf" download>CV-DOWNLOAD</a></li>
-                <li><a href="">ERFARING</a></li>
-                <li><a href="">KONTAKT</a></li>
+                <li><a onclick="Hjem('.Utdanning')">UTDANNING</a></li>
+                <li><a onclick="Hjem('.Erfaring')">ERFARING</a></li>
+                <li><a onclick="Hjem('.Kontaktinformasjon')">KONTAKT </a></li>
             </ul>
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>
 
     </nav>
-
     <div class="text-box">
         <h1 >HEI! JEG ER KRISTIAN</h1>
-        <P>Kompitent VG2 elev i it drift og utvikling. <br> Les under for mer information. </P>
-        <a href=""class="about-me-btn" href="">Klikk her for mer informasjon om meg </a>
+        <P>Kompetent VG2 elev i it drift og utvikling. <br> Les under for mer information. </P>
+        <a class="about-me-btn"onclick="Hjem('.OM-MEG')">Klikk her for mer informasjon om meg </a>
     </div>
 
 
 
 </section>
 
-<!-----course----->
-<section class="Kontactinformasjon">
-    <h1>Kontactinformasjon</h1>
-    <h2>Gmail: Kristian.Anker.Hoy@gmail.com</h2>
+
+<!----Om meg----->
+
+<section class="OM-MEG">
+    <h1>OM MEG</h1>
+    
+
+
+    <div class="row center">    
+        <div class="OM-MEG-COL">
+            <h3>Navn: Kristian Anker Høy </h3><br>
+            <br>
+            <h3>Adresse: Lensmannsstien 131</h3><br>
+            <br>
+            <h3>Telefon: 91 58 90 65 </h3><br>
+            <br>
+            <h3>Språk: Norsk og Engelsk</h3><br>
+            <br>
+            <h3>Gmail: Kristian.Anker.Hoy@gmail.com</h3><br>
+            <br>
+            <h3>Fødselsdato: 2 februar 2005</h3><br>
+            <br>
+        </div>
+    </div>
+
+</section>
+
+
+<!----Prosjekter---->
+
+<section class="Prosjekter">
+    <h1>Prosjekter</h1>
+
+    <div class="row">
+        <div class="Prosjekter-col">
+            <img src="/Bilder/wireshark-logo.webp" alt="">
+            <div class="layer">
+                <h3>Wireshark</h3>
+            </div>
+        </div>
+        <div class="Prosjekter-col">
+            <img src="/Bilder/MySQL.jpg" alt="">
+            <div class="layer">
+                <h3>Mysql</h3>
+            </div>
+        </div>
+        <div class="Prosjekter-col">
+            <img src="/Bilder/Bitcoin.jfif" alt="">
+            <div class="layer">
+                <h3>Gold, Silver, Bitcoin api</h3>
+            </div>
+        </div>
+       
+    </div>
+
+    <div class="row">
+        <div class="Prosjekter-col">
+            <img src="/Bilder/Object.jpg" alt="">
+            <div class="layer">
+                <h3>Object Recognition</h3>
+            </div>
+        </div>
+        <div class="Prosjekter-col">
+            <img src="/Bilder/github.jpg" alt="">
+            <div class="layer">
+                <h3>Website</h3>
+            </div>
+        </div>
+        <div class="Prosjekter-col">
+            <img src="/Bilder/Bluetooth.webp" alt="">
+            <div class="layer">
+                <h3>Bluetooth</h3>
+            </div>
+        </div>
+       
+    </div>
+
+</section>
+
+
+<!----Utdanning----->
+
+<section class="Utdanning">
+    <h1>Utdanning</h1>
+      
+    <div class="row">
+        <div class="Utdanning-col">
+            <h3>Videregående</h3>
+            <p id="p1">Åssiden Vgs 1-2 IT klasse</p>
+        </div>
+        <div class="Utdanning-col">
+            <h3>Ungdomsskole</h3>
+            <p id="p1">Svensedammen undomsskole 8-10 klasse</p>
+        </div>
+        <div class="Utdanning-col">
+            <h3>Barneskole</h3>
+            <p id="p1">Konnerudskole 1-7 klasse</p>
+        </div>
+    </div>
+
+</section>
+
+
+<!----Erfaring----->
+
+<section class="Erfaring">
+    <h1>Erfaring</h1>
+    
+    <div class="row center">    
+        <div class="Erfaring-COL">
+            <h3>  13-16 år </h3>
+            <p> Assisterende patruljeleder i konnerudspeidergruppe i 3 år</p>
+        </div>
+        <div class="Erfaring-COL">
+            <h3> 2 Uker</h3>
+            <p> Praksisplass på åssiden Vgs i it-support bygg A </p>
+        </div>
+    </div>
+
 </section>
 
 
 
-<!--------Javascript for toggle menu--------->
- <script>
-
-    var navLinks = document.getElementById("navLinks");
-
-    function showMenu(){
-        navLinks.style.right = "0";
-    }
-    function hideMenu(){
-        navLinks.style.right = "-200px";
-    }
 
 
- </script>
+<!-----Kontaktinformasjon----->
+
+<section class="Kontaktinformasjon">
+    <h1>Kontaktinformasjon</h1>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>Gmail</h3>
+            <p id="p1">Kristian.Anker.Hoy@gmail.com</p>
+        </div>
+        <div class="course-col">
+            <h3>Adresse</h3>
+            <p id="p1">Betzy Kjelsbergs vei 267, 3028 Drammen</p>
+        </div>
+        <div class="course-col">
+            <h3>Telefon</h3>
+            <p id="p1"> 91 58 90 65</p>
+        </div>
+    </div>
+
+</section>
+
+
+<!----Footer----->
+
+<section class="footer">
+
+<h4> Mer om meg </h4>
+<p class="sup"> Se på </p>
+
+<div class="icons">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-github"></i>
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<script src="app.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
