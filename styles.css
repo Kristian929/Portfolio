@@ -185,7 +185,7 @@ nav .fa{
     padding-bottom: 55px;
     padding-top: 55px;
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));
-    background-position: center;"
+    background-position: center;
     background-size: cover;
     position: relative; 
     display: flex;
@@ -353,7 +353,7 @@ h3{
     background: #fff3f3;
     border-radius: 100px;
     margin-bottom: 5%;
-    padding: 25px 15px;
+    padding: 30px 20px;
     box-sizing:border-box;
     transition: 0.5s; 
     margin: 10px;
