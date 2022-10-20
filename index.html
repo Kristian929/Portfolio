@@ -13,27 +13,30 @@
 
 </head>
 <body>
-<section>
-    <Header class= "header">
+    
+<section class="header">
+    <Header>
     <nav>
-        <a href="index.html"><img src="/Bilder/Kristian.png", width="100px"></a>
+        <a href="index.html"><img src="/Bilder/anchor-309481_960_720.webp", width="100px"></a>
         <div class="nav-links" id="navLinks">
           <i class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
                 <li><a onclick="Hjem('.header')">HJEM</a></li>
                 <li><a onclick="Hjem('.OM-MEG')">OM MEG</a></li>
                 <li><a onclick="Hjem('.Prosjekter')">PROSJEKTER</a></li>
-                <li><a onclick="CV.pdf" download>CV-DOWNLOAD</a></li>
                 <li><a onclick="Hjem('.Utdanning')">UTDANNING</a></li>
                 <li><a onclick="Hjem('.Erfaring')">ERFARING</a></li>
                 <li><a onclick="Hjem('.Kontaktinformasjon')">KONTAKT </a></li>
+                <li><input type="button" value="CV DOWNLOAD" onclick="DownloadFile('CV.pdf')" /></li>
             </ul>
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>
-    </Header>
-
     </nav>
-    <div class="text-box">
+    </header>    
+</section>
+
+<section class="text-box">
+    <div >
         <h1 >HEI! JEG ER KRISTIAN</h1>
         <P>Kompetent VG2 elev i it drift og utvikling. <br> Les under for mer information. </P>
         <a class="about-me-btn"onclick="Hjem('.OM-MEG')">Klikk her for mer informasjon om meg </a>
@@ -154,15 +157,15 @@
     <div class="row center">    
         <div class="Erfaring-COL">
             <h3>  13-16 År </h3>
-            <p> Assisterende Patruljeleder I Konnerudspeidergruppe</p>
+            <p> Assisterende patruljeleder i Konnerud speidergruppe</p>
         </div>
         <div class="Erfaring-COL">
             <h3> 2 Uker</h3>
-            <p> Praksisplass På Åssiden Vgs I IT-Support Bygg G </p>
+            <p> Praksisplass på Åssiden Vgs i IT-Support bygg G </p>
         </div>
         <div class="Erfaring-COL">
             <h3> 3 Timer</h3>
-            <p> IKT Sikkerhetskurs Fra NSM </p>
+            <p> IKT sikkerhetskurs fra NSM </p>
         </div>
     </div>
 
@@ -203,10 +206,11 @@
 <p class="sup"> Se på </p>
 
 <div class="icons">
-    <i class="fa fa-facebook"></i>
-    <i class="fa fa-twitter"></i>
-    <i class="fa fa-instagram"></i>
-    <i class="fa fa-github"></i>
+    <a class="fa fa-facebook" href= "https://www.facebook.com/profile.php?id=100033788949816"></a>
+    <a class="fa fa-twitter" href= "https://twitter.com/KristianHoy"></a>
+    <a class="fa fa-instagram" href= "https://www.instagram.com/hoykristian/"></a>
+    <a class="fa fa-github" href="https://github.com/Kristian929"></a>
+    
 </div>
 
 </section>
@@ -222,6 +226,10 @@
 
 
 <script src="app.js"></script>
+
+
+
+
 
 
 
